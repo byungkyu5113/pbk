@@ -1,0 +1,140 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+}
+
+header h1 {
+    float: left;
+    margin-left: 20px;
+}
+
+header nav {
+    float: right;
+    margin-right: 20px;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: #cfcfcf;
+}
+
+main {
+    padding: 20px;
+}
+
+.posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.post {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.post h2 {
+    color: #333;
+}
+
+.post-meta {
+    color: #666;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+}
+
+.read-more {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.read-more:hover {
+    background: #555;
+}
+
+
+/* 기본 테이블 스타일 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* 테이블 위 여백 */
+}
+
+caption {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2; /* 헤더 배경색 */
+}
+
+/* 짝수 행 배경색 */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* 홀수 행 배경색 */
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* 마지막 행 아래 여백 */
+tbody tr:last-child {
+    margin-bottom: 20px;
+}
+
+
+
+
